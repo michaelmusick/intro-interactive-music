@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 331.0, 100.0, 701.0, 795.0 ],
+		"rect" : [ 331.0, 100.0, 429.0, 325.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,14 +38,31 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontsize" : 14.0,
+					"id" : "obj-4",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 239.0, 80.0, 160.0, 38.0 ],
+					"style" : "",
+					"text" : "To Use, Open Ableton and Set a Track MIDI in"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.670588, 0.74902, 0.807843, 1.0 ],
+					"fontsize" : 18.0,
 					"id" : "obj-18",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 398.0, 29.0, 150.0, 33.0 ],
+					"patching_rect" : [ 22.0, 12.5, 222.0, 47.0 ],
 					"style" : "",
-					"text" : "Raw midi note and velocity sent \"from Max 1\""
+					"text" : "Raw midi note and velocity sent \"from Max 1\"",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -56,9 +73,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 241.0, 182.0, 307.0, 22.0 ],
+					"patching_rect" : [ 92.0, 185.0, 307.0, 22.0 ],
 					"style" : "",
-					"text" : "63.988239 37.782516"
+					"text" : "65.954659 89.987373"
 				}
 
 			}
@@ -70,7 +87,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 152.0, 306.5, 130.0, 23.0 ],
+					"patching_rect" : [ 22.0, 256.5, 130.0, 23.0 ],
 					"style" : "",
 					"text" : "midiout \"from Max 1\""
 				}
@@ -85,7 +102,7 @@
 					"numinlets" : 7,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "" ],
-					"patching_rect" : [ 152.0, 243.0, 377.0, 23.0 ],
+					"patching_rect" : [ 22.0, 221.0, 377.0, 23.0 ],
 					"style" : "",
 					"text" : "midiformat"
 				}
@@ -98,7 +115,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "float", "bang", "list", "float", "list" ],
-					"patching_rect" : [ 152.0, 120.0, 113.0, 22.0 ],
+					"patching_rect" : [ 22.0, 143.0, 113.0, 22.0 ],
 					"style" : "",
 					"text" : "fiddle~ 1024 1 20 3"
 				}
@@ -111,18 +128,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 171.0, 71.0, 80.0, 13.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "ezdac~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 37.0, 23.0, 45.0, 45.0 ],
+					"patching_rect" : [ 41.0, 115.0, 80.0, 13.0 ],
 					"style" : ""
 				}
 
@@ -134,7 +140,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 152.0, 29.0, 37.0, 22.0 ],
+					"patching_rect" : [ 22.0, 73.0, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "adc~"
 				}
